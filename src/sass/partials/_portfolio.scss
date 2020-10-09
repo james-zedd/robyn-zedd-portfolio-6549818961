@@ -1,0 +1,10 @@
+.portfolio {
+    &__header {
+        text-align: center;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

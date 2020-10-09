@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import './sass/application.scss';
+import Home from './components/Home';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import PortfolioDetails from './components/PortfolioDetails';
+import FourOhFour from './components/404';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className='App'>
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path='/' component={Home} />
+                    <Route exact path='/about' component={About} />
+                    <Route exact path='/portfolio' component={Portfolio} />
+                    <Route path='/portfolio-details/*' component={PortfolioDetails} />
+                    <Route path='*' component={FourOhFour} />
+                </Switch>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
