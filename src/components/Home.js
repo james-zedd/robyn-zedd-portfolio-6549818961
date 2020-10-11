@@ -6,19 +6,19 @@ import leavesRight from '../assets/leaves-r.png';
 export class Home extends Component {
     render() {
         return (
-            <div id='Home'>
-                <img src={leavesLeft} alt='' class='leaves left' />
-                <img src={leavesRight} alt='' class='leaves right' />
+            <div id='Home' className="home">
+                <img src={leavesLeft} alt='' className='leaves left' />
+                <img src={leavesRight} alt='' className='leaves right' />
                 <div className='home__logo-container'>
-                    <h1>
+                    <h1 className="home__logo">
                         Robyn Zedd <span>Design</span>
                     </h1>
                 </div>
                 <div className='home__paths'>
-                    <div className='paths__about'>
+                    <div className='home__path about-me'>
                         <Link to='/about'>About Me</Link>
                     </div>
-                    <div className='paths__portfolio'>
+                    <div className='home__path portfolio'>
                         <Link to='/portfolio'>Portfolio</Link>
                     </div>
                 </div>

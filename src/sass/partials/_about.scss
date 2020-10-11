@@ -1,0 +1,43 @@
+.about {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+
+    .leaves.left,
+    .leaves.right {
+        top: -1000px;
+    }
+
+    &__container {
+        margin: auto;
+        display: flex;
+        width: calc(100% - 430px);
+        max-width: 1455px;
+    }
+
+    &__profile-pic {
+        margin-right: 60px;
+        max-width: 359px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 100px;
+            color: #ff918f;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 18px;
+        }
+
+        a {
+            color: #ff918f;
+        }
+    }
+}

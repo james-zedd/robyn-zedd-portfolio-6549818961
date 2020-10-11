@@ -3,42 +3,48 @@
         "id": 1,
         "name": "Florida Graphics and Marketing",
         "img_code": "florida.jpg",
-        "creation_medium": "Adobe Illustrator",
-        "meta": ["graphic design", "logo", "Adobe Illustrator", "Florida Graphics & Marketing"]
+        "creation_medium": "Adobe Dimensions",
+        "meta": ["graphic design", "logo", "Adobe Illustrator", "Florida Graphics & Marketing"],
+        "max_width": "532px"
     },
     {
         "id": 2,
         "name": "Studio Color",
         "img_code": "musicapp.png",
-        "creation_medium": "Adobe XD",
-        "meta": ["app design", "music app", "Adobe XD", "Florida Graphics & Marketing"]
+        "creation_medium": "Adobe XD, Adobe Illustrator, Adobe Photoshop",
+        "meta": ["app design", "music app", "Adobe XD", "Florida Graphics & Marketing"],
+        "max_width": "1920px"
     },
     {
         "id": 3,
         "name": "Dream Office",
         "img_code": "dreamroom.jpg",
-        "creation_medium": "Sketch for iPad Pro",
-        "meta": ["hand sketch", "digital art", "Apple Sketch", "dream office"]
+        "creation_medium": "ProCreate for iPad Pro",
+        "meta": ["hand sketch", "digital art", "Apple Sketch", "dream office"],
+        "max_width": "1000px"
     },
     {
         "id": 4,
         "name": "Warehouse Blowout Sale",
         "img_code": "furniture.png",
-        "creation_medium": "Adobe Photoshop",
-        "meta": ["graphic design", "flyer", "Adobe Photoshop", "Warehouse Blowout Sale"]
+        "creation_medium": "Adobe Indesign",
+        "meta": ["graphic design", "flyer", "Adobe Photoshop", "Warehouse Blowout Sale"],
+        "max_width": "650px"
     },
     {
         "id": 5,
         "name": "Wobbly Walrus",
         "img_code": "wobbly.jpg",
-        "creation_medium": "Adobe Photoshop",
-        "meta": ["graphic design", "concept art", "beer can", "Adobe Photoshop", "Wobbly Walrus Brewing Company"]
+        "creation_medium": "Adobe Dimensions",
+        "meta": ["graphic design", "concept art", "beer can", "Adobe Photoshop", "Wobbly Walrus Brewing Company"],
+        "max_width": "1150px"
     },
     {
         "id": 6,
-        "name": "Zedd Media",
-        "img_code": "zeddmedia.png",
-        "creation_medium": "Adobe After Effects",
-        "meta": ["video editing", "promo video", "Adobe After Effects", "Zedd Media"]
+        "name": "Todd Smith Woodworking",
+        "img_code": "woodworking.png",
+        "creation_medium": "Adobe Photoshop",
+        "meta": ["graphic design", "business card", "Adobe Illustrator", "Todd Smith Woodworking"],
+        "max_width": "650px"
     }
 ]
