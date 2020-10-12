@@ -12,6 +12,12 @@
         border-top: 16px solid #ffffff;
         border-bottom: 16px solid #ffffff;
         height: 560px;
+
+        @media (max-width: 1023px) {
+            margin-top: 100px;
+            padding: 100px 15px;
+            height: auto;
+        }
     }
 
     &__logo {
@@ -20,6 +26,30 @@
 
         span {
             display: block;
+        }
+
+        @media (max-width: 1023px) {
+            font-size: 100px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 60px;
+        }
+    }
+
+    &__design {
+        margin-top: -90px;
+        width: 100%;
+        max-width: 481px;
+
+        @media (max-width: 1023px) {
+            margin-top: -55px;
+            max-width: 300px;
+        }
+
+        @media (max-width: 767px) {
+            margin-top: -30px;
+            max-width: 180px;
         }
     }
 
@@ -30,6 +60,17 @@
         width: calc(100% - 430px);
         max-width: 1455px;
         z-index: 5;
+
+        @media (max-width: 1023px) {
+            flex-direction: column;
+            width: 100%;
+            margin: 200px auto 150px;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            margin: 200px auto 150px;
+        }
     }
 
     &__path {
@@ -38,6 +79,22 @@
         @include font-balboa();
         font-size: 70px;
         text-align: center;
+
+        @media (max-width: 1450px) {
+            padding: 200px 0;
+        }
+
+        @media (max-width: 1200px) {
+            width: 75%;
+            margin: 0 auto;
+            padding: 150px 0;
+            font-size: 50px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 100px 0;
+            font-size: 40px;
+        }
 
         a {
             text-decoration: none;

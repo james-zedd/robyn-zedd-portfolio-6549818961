@@ -1,0 +1,12 @@
+.four-oh-four {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .img {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}

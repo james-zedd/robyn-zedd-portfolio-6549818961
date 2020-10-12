@@ -26,15 +26,28 @@
         position: absolute;
         top: 25px;
         left: 25px;
+
+        @media (max-width: 767px) {
+            top: 12px;
+            left: 12px;
+        }
     }
 
     .arrow.decrement {
         margin-left: 75px;
+
+        @media (max-width: 767px) {
+            margin-left: 25px;
+        }
     }
 
     .arrow.increment {
         margin-right: 75px;
         transform: rotate(180deg);
+
+        @media (max-width: 767px) {
+            margin-right: 25px;
+        }
     }
 
     .link {
@@ -45,6 +58,14 @@
         &--disabled {
             pointer-events: none;
             opacity: 0.2;
+        }
+    }
+
+    .mobile-landscape-size {
+        @media (max-width: 767px) and (orientation: landscape) {
+            width: auto;
+            height: auto;
+            max-height: calc(100vh - 48px);
         }
     }
 }

@@ -48,12 +48,12 @@ export class PortfolioDetails extends Component {
             return <Redirect to='/404' />
         }
 
-        const { img_code, max_width, name } = this.state.portfolioItem;
+        const { img_code, max_width, name, additional_classes } = this.state.portfolioItem;
 
         return (
             <div className="portfolio-details">
-                <Link to="/portfolio" className="close-btn">
-                    <img src={Close} alt="" class="close" />
+                <Link to="/portfolio" className="close-btn top-corner">
+                    <img src={Close} alt="" class="close nav-icon" />
                 </Link>
                 <div className="portfolio-details__container">
                     <Link 
@@ -61,12 +61,12 @@ export class PortfolioDetails extends Component {
                         onClick={this.decrement} 
                         className={this.state.itemId == 1 ? "link link--disabled" : "link"}
                     >
-                        <img src={Arrow} alt="" className="arrow decrement"/>
+                        <img src={Arrow} alt="" className="arrow decrement nav-icon"/>
                     </Link>
                     <div className="portfolio-details__item">
                         {this.state.isLoading 
                             ? <img src={Loading} alt="... loading" className="portfolio-details__loading" style={{maxWidth: '100px'}} />
-                            : <img src={require(`../assets/img_detail/${img_code}`)} alt={name} className="img portfolio-details__img" style={{maxWidth: max_width}} />
+                            : <img src={require(`../assets/img_detail/${img_code}`)} alt={name} className={`img portfolio-details__img ${additional_classes}`} style={{maxWidth: max_width}} />
                         }
                     </div>
                     <Link
@@ -74,7 +74,7 @@ export class PortfolioDetails extends Component {
                         onClick={this.increment}
                         className={this.state.itemId == this.state.itemsLength ? "link link--disabled" : "link"}
                     >
-                        <img src={Arrow} alt="" className="arrow increment"/>
+                        <img src={Arrow} alt="" className="arrow increment nav-icon"/>
                     </Link>
                 </div>
             </div>

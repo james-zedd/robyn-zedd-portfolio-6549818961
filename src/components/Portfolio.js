@@ -15,16 +15,16 @@ export class Portfolio extends Component {
         return (
             <div className='portfolio'>
                 <div className='portfolio__header'>
-                    <div className='btn back-btn'>
+                    <div className='btn back-btn top-corner'>
                         <Link to='/'>
                             <img
                                 src={Arrow}
                                 alt='Back'
-                                className='arrow back'
+                                className='arrow back nav-icon'
                             />
                         </Link>
                     </div>
-                    <h1>My Work</h1>
+                    <h1 className="page-title">My Work</h1>
                 </div>
                 <div className='portfolio__items'>
                     <PortfolioItems items={Data} />

@@ -174,22 +174,73 @@ body {
     width: 100%;
 }
 
+.page-title {
+    font-size: 100px;
+
+    @media (max-width: 1023px) {
+        font-size: 80px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 60px;
+    }
+}
+
+.nav-icon {
+    @media (max-width: 1365px) {
+        max-width: 40px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 20px;
+    }
+}
+
 .leaves {
     position: absolute;
     top: -200px;
 
+    @media (max-width: 1023px) {
+        top: -500px;
+    }
+
     &.left {
         left: -310px;
+
+        @media (max-width: 1023px) {
+            left: -420px;
+        }
+
+        @media (max-width: 767px) {
+            left: -470px;
+        }
     }
 
     &.right {
         right: -310px;
+
+        @media (max-width: 1023px) {
+            right: -420px;
+        }
+
+        @media (max-width: 767px) {
+            right: -470px;
+        }
     }
+}
+
+.text-link {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ff918f;
 }
 
 // Imports
 // ========================
 @import 'partials/about';
+@import 'partials/four-oh-four';
 @import 'partials/home';
 @import 'partials/portfolio-details';
 @import 'partials/portfolio-item';

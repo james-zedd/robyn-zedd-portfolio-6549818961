@@ -5,7 +5,8 @@
         "img_code": "florida.jpg",
         "creation_medium": "Adobe Dimensions",
         "meta": ["graphic design", "logo", "Adobe Illustrator", "Florida Graphics & Marketing"],
-        "max_width": "532px"
+        "max_width": "532px",
+        "additional_classes": "mobile-landscape-size"
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@
         "img_code": "dreamroom.jpg",
         "creation_medium": "ProCreate for iPad Pro",
         "meta": ["hand sketch", "digital art", "Apple Sketch", "dream office"],
-        "max_width": "1000px"
+        "max_width": "1000px",
+        "additional_classes": "mobile-landscape-size"
     },
     {
         "id": 4,
@@ -29,7 +31,8 @@
         "img_code": "furniture.png",
         "creation_medium": "Adobe Indesign",
         "meta": ["graphic design", "flyer", "Adobe Photoshop", "Warehouse Blowout Sale"],
-        "max_width": "650px"
+        "max_width": "650px",
+        "additional_classes": "mobile-landscape-size"
     },
     {
         "id": 5,
