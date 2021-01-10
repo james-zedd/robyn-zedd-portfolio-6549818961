@@ -14,7 +14,7 @@ export class Home extends Component {
                     <h1 className="home__logo">
                         Robyn Zedd
                     </h1>
-                    <img src={Design} alt="" class="home__design" />
+                    <img src={Design} alt="" className="home__design" />
                 </div>
                 <div className='home__paths'>
                     <div className='home__path about-me'>

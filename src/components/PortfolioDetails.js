@@ -10,8 +10,8 @@ function setItemId() {
 }
 
 function getPortfolioItem(itemId) {
-    let id = itemId == undefined ? setItemId() : itemId;
-    let item = Data.find(item => item.id == id);
+    let id = itemId === undefined ? setItemId() : itemId;
+    let item = Data.find(item => item.id === id);
     return item;
 }
 
@@ -44,7 +44,7 @@ export class PortfolioDetails extends Component {
     }
 
     render() {
-        if (this.state.portfolioItem == undefined) {
+        if (this.state.portfolioItem === undefined) {
             return <Redirect to='/404' />
         }
 
@@ -59,20 +59,20 @@ export class PortfolioDetails extends Component {
                     <Link 
                         to={`/portfolio-details/${this.state.itemId - 1}`} 
                         onClick={this.decrement} 
-                        className={this.state.itemId == 1 ? "link link--disabled" : "link"}
+                        className={this.state.itemId === 1 ? "link link--disabled" : "link"}
                     >
                         <img src={Arrow} alt="" className="arrow decrement nav-icon"/>
                     </Link>
                     <div className="portfolio-details__item">
                         {this.state.isLoading 
                             ? <img src={Loading} alt="... loading" className="portfolio-details__loading" style={{maxWidth: '100px'}} />
-                            : <img src={require(`../assets/img_detail/${img_code}`)} alt={name} className={`img portfolio-details__img ${additional_classes}`} style={{maxWidth: max_width}} />
+                            : <img src={require(`../assets/img_detail/${img_code}`).default} alt={name} className={`img portfolio-details__img ${additional_classes}`} style={{maxWidth: max_width}} />
                         }
                     </div>
                     <Link
                         to={`/portfolio-details/${this.state.itemId + 1}`}
                         onClick={this.increment}
-                        className={this.state.itemId == this.state.itemsLength ? "link link--disabled" : "link"}
+                        className={this.state.itemId === this.state.itemsLength ? "link link--disabled" : "link"}
                     >
                         <img src={Arrow} alt="" className="arrow increment nav-icon"/>
                     </Link>

@@ -11,7 +11,7 @@ export class PortfolioItem extends Component {
                     pathname: `/portfolio-details/${id}`
                 }}>
                     <img
-                        src={require(`../assets/img_items/${img_code}`)}
+                        src={require(`../assets/img_items/${img_code}`).default}
                         alt=''
                         className='img img-item'
                     />
