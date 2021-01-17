@@ -23,6 +23,3 @@ yarn-debug.log*
 yarn-error.log*
 
 # custom
-src/assets/img_items
-src/assets/img_detail
-src/assets/fonts
