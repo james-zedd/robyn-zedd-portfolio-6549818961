@@ -49,5 +49,29 @@
         "creation_medium": "Adobe Photoshop",
         "meta": ["graphic design", "business card", "Adobe Illustrator", "Todd Smith Woodworking"],
         "max_width": "650px"
+    },
+    {
+        "id": 7,
+        "name": "Robyn Zedd Design",
+        "img_code": "rzd.jpg",
+        "creation_medium": "Procreate",
+        "meta": ["graphic design", "procreate", "hand-drawn", "Robyn Zedd Design"],
+        "max_width": "1024px"
+    },
+    {
+        "id": 8,
+        "name": "Orca",
+        "img_code": "orca.jpg",
+        "creation_medium": "Procreate",
+        "meta": ["graphic design", "procreate", "hand-drawn", "orca"],
+        "max_width": "1024px"
+    },
+    {
+        "id": 9,
+        "name": "Hallowkitty",
+        "img_code": "hallowkitty.jpg",
+        "creation_medium": "Procreate",
+        "meta": ["graphic design", "procreate", "hand-drawn", "hallowkitty"],
+        "max_width": "1024px"
     }
 ]
